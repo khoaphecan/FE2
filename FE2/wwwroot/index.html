@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopDunk - Đại lý ủy quyền Apple</title>
+    <!-- Nhúng Font Awesome 5 CDN theo hướng dẫn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER & TÌM KIẾM & GIỎ HÀNG -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-apple logo-icon"></i>
+            <h1>Shop<span>Dunk</span></h1>
+        </div>
+
+        <!-- Thanh tìm kiếm -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Bạn tìm gì hôm nay (iPhone, iPad, MacBook)..." />
+            <button id="search-button"><i class="fas fa-search"></i> Tìm kiếm</button>
+        </div>
+
+        <!-- Giỏ hàng và tài khoản -->
+        <div class="header-actions">
+            <a href="#" class="action-item">
+                <i class="fas fa-user"></i>
+                <span>Tài khoản</span>
+            </a>
+            <div class="cart">
+                <a href="giohang.html" class="action-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Giỏ hàng</span>
+                    <span class="cart-count">3</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- DANH MỤC THANH ĐIỀU HƯỚNG -->
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#" class="active"><i class="fas fa-mobile-alt"></i> iPhone</a></li>
+            <li><a href="#"><i class="fas fa-tablet-alt"></i> iPad</a></li>
+            <li><a href="#"><i class="fas fa-laptop"></i> MacBook</a></li>
+            <li><a href="#"><i class="fas fa-clock"></i> Apple Watch</a></li>
+            <li><a href="#"><i class="fas fa-headphones"></i> Tai nghe & Phụ kiện</a></li>
+            <li><a href="#"><i class="fas fa-newspaper"></i> Tin tức</a></li>
+        </ul>
+    </nav>
+
+    <!-- BANNER KHUYẾN MÃI -->
+    <section class="banner">
+        <div class="banner-content">
+            <span class="badge">Ưu đãi mùa tựu trường</span>
+            <h2>iPhone & MacBook Chính Hãng</h2>
+            <p>Trải nghiệm chuẩn Apple Reseller - Giảm giá trực tiếp và bảo hành toàn diện.</p>
+            <a href="#featured" class="btn">Mua ngay hôm nay</a>
+        </div>
+    </section>
+
+    <!-- CONTAINER NỘI DUNG CHÍNH -->
+    <main class="main-container">
+
+        <!-- SẢN PHẨM NỔI BẬT -->
+        <section class="featured-products" id="featured">
+            <div class="section-header">
+                <h2>Sản phẩm nổi bật</h2>
+                <a href="#" class="view-all">Xem tất cả <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="product-container">
+                <!-- Item 1 -->
+                <div class="product-item highlight-card">
+                    <span class="tag-promo">-15%</span>
+                    <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&auto=format&fit=crop&q=60" alt="iPhone 15 Pro Max" />
+                    <h3>iPhone 15 Pro Max 256GB</h3>
+                    <p class="price">29.490.000₫ <del>34.990.000₫</del></p>
+                    <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Chọn mua</button>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="product-item highlight-card">
+                    <span class="tag-promo">Hot</span>
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&auto=format&fit=crop&q=60" alt="MacBook Air M3" />
+                    <h3>MacBook Air 13" M3 (8GB/256GB)</h3>
+                    <p class="price">26.990.000₫ <del>27.990.000₫</del></p>
+                    <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Chọn mua</button>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="product-item highlight-card">
+                    <span class="tag-promo">-22%</span>
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&auto=format&fit=crop&q=60" alt="Apple Watch Series 9" />
+                    <h3>Apple Watch Series 9 GPS 41mm</h3>
+                    <p class="price">8.990.000₫ <del>10.490.000₫</del></p>
+                    <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Chọn mua</button>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="product-item highlight-card">
+                    <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=400&auto=format&fit=crop&q=60" alt="AirPods Pro 2" />
+                    <h3>AirPods Pro 2 (USB-C)</h3>
+                    <p class="price">5.390.000₫ <del>6.190.000₫</del></p>
+                    <button class="btn-add-cart"><i class="fas fa-cart-plus"></i> Chọn mua</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TẤT CẢ SẢN PHẨM / GRID LIST -->
+        <section class="product-list">
+            <div class="section-header">
+                <h2>Danh sách phụ kiện chính hãng</h2>
+            </div>
+
+            <ul class="list-container">
+                <li class="product-item">
+                    <img src="https://images.unsplash.com/photo-1608156639585-b3a032ef9689?w=400&auto=format&fit=crop&q=60" alt="Củ sạc Apple 20W" />
+                    <h3>Củ sạc nhanh Apple 20W Type-C</h3>
+                    <p class="price">490.000₫</p>
+                    <p class="desc">Tương thích sạc nhanh cho mọi dòng iPhone, iPad mới.</p>
+                </li>
+
+                <li class="product-item">
+                    <img src="https://images.unsplash.com/photo-1627989580309-bfaf3e58af6f?w=400&auto=format&fit=crop&q=60" alt="Cáp sạc USB-C" />
+                    <h3>Cáp sạc bện dù USB-C 60W (1m)</h3>
+                    <p class="price">520.000₫</p>
+                    <p class="desc">Độ bền cao, chống rối và hạn chế đứt gãy đầu nối.</p>
+                </li>
+
+                <li class="product-item">
+                    <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=400&auto=format&fit=crop&q=60" alt="Ốp lưng MagSafe" />
+                    <h3>Ốp lưng Clear Case hỗ trợ MagSafe</h3>
+                    <p class="price">1.190.000₫</p>
+                    <p class="desc">Chống ố vàng, lực hút nam châm hít chắc chuẩn Apple.</p>
+                </li>
+
+                <li class="product-item">
+                    <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=400&auto=format&fit=crop&q=60" alt="Bao da iPad" />
+                    <h3>Smart Folio cho iPad Air 11 inch</h3>
+                    <p class="price">2.100.000₫</p>
+                    <p class="desc">Gập mở đa năng, tự động đánh thức màn hình khi mở nắp.</p>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Về ShopDunk</h3>
+                <p>Hệ thống chuỗi cửa hàng ủy quyền Apple chính hãng, cam kết chất lượng sản phẩm và dịch vụ sau bán hàng hàng đầu.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="#">Chính sách bảo hành</a></li>
+                    <li><a href="#">Giao hàng & Lắp đặt</a></li>
+                    <li><a href="#">Mua hàng trả góp 0%</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Tổng đài liên hệ</h3>
+                <p><i class="fas fa-phone-alt"></i> Mua hàng: 1900.6626</p>
+                <p><i class="fas fa-tools"></i> Kỹ thuật: 1900.6627</p>
+                <p><i class="fas fa-envelope"></i> contact@shopdunk.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopDunk. Tất cả quyền được bảo lưu.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
